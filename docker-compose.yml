@@ -13,8 +13,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: Admin123@
 
-  adminer:
-    image: adminer:4.8.1
-    restart: always
-    ports:
-      - 8080:8080
+  #adminer:
+    #image: adminer:4.8.1
+    #restart: always
+    #ports:
+      #- 8081:8081
