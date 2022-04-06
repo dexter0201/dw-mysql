@@ -7,7 +7,7 @@ services:
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     volumes:
-      - ./binary:/var/lib/mysql
+      - ./binary/5.7:/var/lib/mysql
     ports:
       - 3306:3306
     environment:
