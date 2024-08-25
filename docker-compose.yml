@@ -1,14 +1,13 @@
-# Use root/example as user/password credentials
 version: '3.1'
 
 services:
   db:
-    image: mysql:5.7.33
-    platform: linux/amd64
-    command: --default-authentication-plugin=mysql_native_password
+    image: mysql:8.4
+    # platform: linux/amd64
+    # command: --default-authentication-plugin=mysql_native_password
     restart: always
     volumes:
-      - ./binary/5.7:/var/lib/mysql
+      - ./binary/8.4:/var/lib/mysql
     ports:
       - 3306:3306
     environment:
